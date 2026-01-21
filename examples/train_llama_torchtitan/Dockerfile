@@ -44,4 +44,4 @@ COPY . .
 RUN pip install -e .
 
 ENTRYPOINT ["python", "examples/train_llama_torchtitan/train_llama.py"]
-CMD ["--model_type=debugmodel", "--batch_size=8", "--seqlen=2048"]
+CMD ["--model_type=debugmodel", "--batch_size=32", "--seqlen=2048"]
